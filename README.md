@@ -76,6 +76,15 @@ The code is structured to clearly demonstrate the following stages of the ID3 al
 
 *   **Data Loading:** Reading the provided CSV file.
 *   **Entropy Calculation:** Implementing the formula to calculate the entropy of a data set.
+*   ```
+    entropy(S) = - Σ  pᵢ log₂(pᵢ) 
+                 ᵢ
+    ```
+
+    Where:
+    *  `S` represents the current dataset.
+    *  `pᵢ` is the proportion of data points belonging to class `i` within the dataset.
+    *  The sum is over all unique classes in the dataset.
 *   **Attribute Selection:** Iterating through possible splitting attributes.
 *   **Information Gain Calculation:** Computing information gain for each attribute to select the best one for a split.
 *   **Tree Construction:** Building the decision tree recursively.
